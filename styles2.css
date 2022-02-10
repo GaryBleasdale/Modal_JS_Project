@@ -1,0 +1,99 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+
+.container-off{
+  background-image: url("/hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  width:100vw;
+  height:100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-off{
+  background-color: white;
+  width:600px;
+  height:200px;
+  border-radius: 5px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+}
+
+.container-on{
+  background-image: url("/hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  width:100vw;
+  height:100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  display:none;
+}
+
+.modal-on{
+  background-color: white;
+  width:600px;
+  height:200px;
+  border-radius: 5px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+}
+
+.container-on::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color:blue;
+  opacity:20%;
+
+}
+.module-inside {
+  /* This will make it stack on top of the ::before */
+  position: relative;
+}
+
+h3{
+  font-size: 48px;
+  letter-spacing:3px;
+  margin-bottom:40px;
+  text-transform:capitalize;
+}
+
+button{
+  background-color: blue;
+  color:white;
+  border: none;
+  padding: 8px 20px;
+  letter-spacing:3px;
+  border-radius: 5px;
+  text-transform:uppercase;
+}
+
+h4{
+  font-size: 24px;
+  letter-spacing:3px;
+  margin-bottom:40px;
+  text-transform:capitalize;
+}
+
+i{
+  position:absolute;
+  top:15px;
+  right:15px;
+  color:rgb(187, 4, 4);
+  font-size: 25px;
+}
